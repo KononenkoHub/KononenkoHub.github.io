@@ -1,0 +1,84 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.main{
+    text-align: center;
+    margin-left: 100px;
+    width: 1460px;
+}
+
+/*right yellow comet*/
+.st15{ 
+    animation: low-comet 30s ease infinite ;
+    animation-delay: 2s;
+}
+
+/*left blue comet*/
+.st19 {
+    animation: low-comet 18s ease infinite;
+    animation-delay: 1s;
+}
+
+
+.st21{
+    animation: upper-comet 12s ease infinite;
+
+}
+
+
+.st16{
+    animation: low-comet 35s ease infinite;
+}
+
+/*
+.st1{
+    animation: planet-move 30s ease infinite;
+    transform-origin: center;
+}
+
+@keyframes planet-move{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+*/
+
+@keyframes low-comet{
+    from{
+        transform: translate(0px,0px);
+        -webkit-transform: translate(0px, 0px);
+        -o-transform: translate(0px, 0px);
+        -moz-transform: translate(0px, 0px);
+    }
+    to{
+        transform: translate(-500px,500px);
+        -webkit-transform: translate(-500px,500px);
+        -o-transform: translate(-650px,650px);
+        -moz-transform: translate(-650px,650px);
+    }
+}
+
+
+@keyframes upper-comet{
+    from{
+        transform: translate(0px,0px);
+        -webkit-transform: translate(0px, 0px);
+        -o-transform: translate(0px, 0px);
+        -moz-transform: translate(0px, 0px);
+        
+    }
+    to{
+        transform: translate(-1650px,1650px);
+        -webkit-transform: translate(-1650px,1650px);
+        -o-transform: translate(-1650px,1650px);
+        -moz-transform: translate(-1650px,1650px);
+        
+    }
+}
+
